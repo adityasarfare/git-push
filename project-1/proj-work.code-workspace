@@ -1,0 +1,28 @@
+{
+  "folders": [
+    {
+      "path": "project\\proj-work"
+    }
+  ],
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#79021b",
+      "activityBar.activeBorder": "#1c7d02",
+      "activityBar.background": "#79021b",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#1c7d02",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "statusBar.background": "#470110",
+      "statusBar.border": "#470110",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#79021b",
+      "titleBar.activeBackground": "#470110",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.border": "#470110",
+      "titleBar.inactiveBackground": "#47011099",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#470110"
+  }
+}

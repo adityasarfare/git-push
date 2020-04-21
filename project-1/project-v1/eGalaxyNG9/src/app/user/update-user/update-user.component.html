@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Update User</h3>
+            <hr>
+            <div>
+                <form (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="userName">User Name</label>
+                        <input type="text" class="form-control" id="userName" required [(ngModel)]="user.userName"
+                            name="userName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Email Id</label>
+                        <input type="email" class="form-control" id="userEmail" required [(ngModel)]="user.userEmail"
+                            name="userEmail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userDob">DOB</label>
+                        <input type="text" class="form-control" id="userDob" required [(ngModel)]="user.userDob"
+                            name="userDob">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userPassword">Password</label>
+                        <input type="text" class="form-control" id="userPassword" required
+                            [(ngModel)]="user.userPassword" name="userPassword">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userGender">Gender</label>
+                        <input type="text" class="form-control" id="userGender" required [(ngModel)]="user.userGender"
+                            name="userGender">
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Update</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-1 center"></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4 text-center">
+            <h3 class="details text-warning">User Details</h3>
+            <hr>
+            <strong class="level">User Name : {{user.userName}}</strong>
+            <strong class="level">Email Id : {{user.userEmail}}</strong>
+            <strong class="level">Password : {{user.userPassword}}</strong>
+            <strong class="level">Date of Birth : {{user.userDob}}</strong>
+            <strong class="level">Gender : {{user.userGender}}</strong>
+            <button (click)="gotoList()" class="btn btn-primary btn-md back-btn">Back to List</button>
+        </div>
+    </div>
+</div>

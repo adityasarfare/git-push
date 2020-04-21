@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-9 mb-4">
+                    <h2 class="text-center text-secondary">My Orders</h2>
+                </div>
+                <div class="col-md-2 ml-5 text-center">
+                    <div class="text-warning"><i class="fa fa-cart-arrow-down" style="font-size:36px"></i></div>
+                </div>
+            </div>
+            <hr>
+            <div *ngFor="let order of orders | async">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3 class="mb-4 text-primary">{{order.courseName}}</h3>
+                        <h6 style="color: indianred;">Order Id : {{order.orderId}}</h6>
+                        <p style="color: gray;" class="mb-5">Desc : {{order.courseDescription}}</p>
+                        <hr>
+                    </div>
+
+                    <div class="col-md-3 text-center">
+                        <h5 class="text-secondary text-center">Order Placed!</h5>
+                        <i class="fa fa-check-circle text-success mt-3" style="font-size:36px"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

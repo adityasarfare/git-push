@@ -1,0 +1,36 @@
+<!-- event binding -->
+<div style="width: 500px; margin-left: 100px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        name="firstName"
+        required
+        class="form-control"
+        [(ngModel)]="Course.firstName"
+      />
+    </div>
+    <!-- two way data binding -->
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        name="lastName"
+        class="form-control"
+        [(ngModel)]="Course.lastName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="emailId">Email Id</label>
+      <input
+        type="text"
+        name="emailId"
+        class="form-control"
+        [(ngModel)]="Course.emailId"
+      />
+    </div>
+    <button type="submit" class="btn btn-success">Save Course</button>
+  </form>
+</div>

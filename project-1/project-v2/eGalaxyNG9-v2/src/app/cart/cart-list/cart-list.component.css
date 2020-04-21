@@ -1,0 +1,33 @@
+
+.modal-header {
+    background-color: dodgerblue;
+    text-align: center;
+
+}
+ .modal-content {
+    height: 60vh;
+    width: 80vh;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-title {
+    color: whitesmoke;
+   
+}
+
+.close 
+{
+    padding: 1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    color: white;
+    border-radius: 50%;
+}
+.close:hover {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}

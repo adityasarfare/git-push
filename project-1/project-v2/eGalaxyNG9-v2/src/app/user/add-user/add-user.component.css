@@ -1,0 +1,22 @@
+h3,h5 {
+    color:grey;
+}
+
+.col-sm-5 {
+    margin-top: 7rem;
+    
+}
+
+.col-sm-5 h3 {
+    padding-left: 3rem;
+}
+
+.col-sm-5 h5 {
+    margin-top: 3rem;
+    padding-left: 7rem;
+}
+
+.col-sm-5 img {
+    margin-top: 7rem;
+    margin-left: 0;
+}

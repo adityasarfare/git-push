@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "9f7923b7-5cb6-4603-bf71-2e1d26b4ac96",
+		"name": "eGalaxySBUser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/eGalaxy/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"eGalaxy",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET USER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/eGalaxy/api/users/62",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"eGalaxy",
+						"api",
+						"users",
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST USER 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Denis\",\r\n    \"userEmail\": \"denisdevaraj@gmail.com\",\r\n    \"userPassword\": \"deni\",\r\n    \"userDob\": \"10-Jun-96\",\r\n    \"userGender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/eGalaxy/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"eGalaxy",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST USER 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Raghul\",\r\n    \"userEmail\": \"raghulkumar@gmail.com\",\r\n    \"userPassword\": \"raghu\",\r\n    \"userDob\": \"1-Mar-97\",\r\n    \"userGender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/eGalaxy/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"eGalaxy",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST USER 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Vinod\",\r\n    \"userEmail\": \"vonidkumar@gmail.com\",\r\n    \"userPassword\": \"masina\",\r\n    \"userDob\": \"21-Jan-96\",\r\n    \"userGender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/eGalaxy/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"eGalaxy",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT USER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 62,\r\n    \"userName\": \"Thoufiq\",\r\n    \"userEmail\": \"thoufiq@gmail.com\",\r\n    \"userPassword\": \"ahmed\",\r\n    \"userDob\": \"21-Apr-96\",\r\n    \"userGender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/eGalaxy/api/users/62",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"eGalaxy",
+						"api",
+						"users",
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USERS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/eGalaxy/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"eGalaxy",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/eGalaxy/api/users/62",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"eGalaxy",
+						"api",
+						"users",
+						"62"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

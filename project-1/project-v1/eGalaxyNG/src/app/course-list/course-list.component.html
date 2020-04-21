@@ -1,0 +1,39 @@
+<!-- Course LIST -->
+<div class="container">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courses | async">
+        <td>{{ course.courseName }}</td>
+        <td>{{ course.courseDescription }}</td>
+        <td>{{ course.courseAuthor }}</td>
+        <td>
+          <button (click)="deleteCourse(Course.id)" class="btn btn-danger">
+            Delete
+          </button>
+          <button
+            (click)="updateCourse(Course.id)"
+            class="btn btn-warning"
+            style="margin-left: 10px;"
+          >
+            Update
+          </button>
+          <button
+            (click)="CourseDetails(Course.id)"
+            class="btn btn-success"
+            style="margin-left: 10px;"
+          >
+            Details
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

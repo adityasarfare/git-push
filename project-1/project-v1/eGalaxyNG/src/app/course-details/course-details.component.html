@@ -1,0 +1,19 @@
+<div>
+  <b>Course Details</b>
+</div>
+<hr />
+<div *ngIf="Course">
+  <div>
+    <label><b>First Name :</b></label> {{ Course.firstName }}
+  </div>
+  <div>
+    <label><b>Last Name :</b></label> {{ Course.lastName }}
+  </div>
+  <div>
+    <label><b>Email Id :</b></label> {{ Course.emailId }}
+  </div>
+</div>
+<br />
+<button class="btn btn-primary" (click)="CourseList()">
+  Course List &gt;&gt;&gt;
+</button>

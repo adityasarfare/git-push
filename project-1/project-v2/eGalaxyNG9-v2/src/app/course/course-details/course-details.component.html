@@ -1,0 +1,21 @@
+<hr />
+<div *ngIf="course">
+  <div>
+    <label><b>Course Name: </b></label> {{ course.courseName }}
+  </div>
+  <div>
+    <label><b>Course Author: </b></label> {{ course.courseAuthor }}
+  </div>
+  <div>
+    <label><b>Course Course: </b></label> {{ course.courseDescription }}
+  </div>
+  <div>
+    <label><b>Course Price: </b></label>
+    {{ course.coursePrice | currency: "INR" }}
+  </div>
+</div>
+
+<br />
+<br />
+<button (click)="list()" class="btn btn-primary">Back to Employee List</button
+><br />

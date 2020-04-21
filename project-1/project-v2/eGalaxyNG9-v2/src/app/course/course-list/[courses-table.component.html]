@@ -1,0 +1,59 @@
+<div class="data-table">
+  <mat-table
+    class="table table-striped table-dark"
+    [dataSource]="dataSource"
+    matSort
+  >
+    <ng-container matColumnDef="courseName">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Course Name</mat-header-cell>
+      <mat-cell *matCellDef="let course">{{ course.courseName }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="courseAuthor">
+      <mat-header-cell *matHeaderCellDef mat-sort-header
+        >Author</mat-header-cell
+      >
+      <mat-cell *matCellDef="let course">{{ course.courseAuthor }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="courseDescription">
+      <mat-header-cell *matHeaderCellDef mat-sort-header
+        >Course Description</mat-header-cell
+      >
+      <mat-cell *matCellDef="let course">{{ course.courseDescription }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="coursePrice">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Price</mat-header-cell>
+      <mat-cell *matCellDef="let course">{{
+        course.coursePrice | currency: "INR"
+      }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="Action">
+      <mat-header-cell *matHeaderCellDef [ngClass]="'customWidthClass'"
+        >Action</mat-header-cell
+      >
+      <mat-cell *matCellDef="let course" [ngClass]="'customWidthClass'">
+        <button (click)="deleteCourse(course.id)" class="btn btn-danger">
+          Delete
+        </button>
+        <button
+          (click)="updateCourse(course.courseid)"
+          class="btn btn-warning"
+          style="margin-left: 10px;"
+        >
+          Update
+        </button>
+        <button
+          (click)="courseDetails(course.id)"
+          class="btn btn-success"
+          style="margin-left: 10px;"
+        >
+          Details
+        </button>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row
+      *matHeaderRowDef="columnsName"
+      color="primary"
+    ></mat-header-row>
+    <mat-row *matRowDef="let row; columns: columnsName"></mat-row>
+  </mat-table>
+</div>

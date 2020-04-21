@@ -1,0 +1,19 @@
+.details {
+    margin-top: 7rem;
+}
+
+.center {
+    border-left: 1px solid grey;
+    height: 65vh;
+}
+
+.level {
+    display: block;
+    line-height: 5rem;
+}
+
+.back-btn {
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}

@@ -1,0 +1,51 @@
+<div class="container text-center mt-5 mb-5">
+    <h2 class="mb-5">Cart List</h2>
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View Cart</button>
+
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title">Cart</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+
+                    <table class="table table-striped table-hover table-dark">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Course Desc</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let cart of carts | async">
+                                <td>{{cart.courseName}}</td>
+                                <td>{{cart.courseId}}</td>
+                                <td>{{cart.courseDescription}}</td>
+                                <td><button (click)="deleteCart(cart.cartId)" class="btn btn-danger">Delete</button>
+                                <td><button (click)="cartDetails(cart.cartId)" class="btn btn-success">Purchase</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+                <div class="modal-footer mt-4 mb-3">
+                    <h6>We can delete or purchase courses here!</h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>

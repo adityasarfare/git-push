@@ -1,0 +1,13 @@
+.container-fluid {
+    background-color: white;
+}
+
+.col-md-12 {
+    padding: 4rem;
+}
+
+.col-md-3 {
+    padding-top: 2rem ;
+    border-left: 1px solid gray;
+    
+}

@@ -1,0 +1,28 @@
+h3 {
+     color:grey;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+.jumbotron {
+    background-color: dimgray;
+    margin-top: -2em;
+}
+
+a {
+    color: whitesmoke;
+}
+
+.container {
+    border: none;
+}
+
+.jumbotron {
+    height: 17vh;
+}
+
+.jumbotron h2 {
+    margin-top: 1rem;
+}
